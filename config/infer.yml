@@ -1,0 +1,24 @@
+model_params:
+  model: MNISTNet
+  num_classes: 10
+
+args:
+  expdir: src
+  logdir: logs
+  verbose: True
+
+stages:
+  data_params:
+    batch_size: 64
+    num_workers: 0
+    test_dir: "./data/test"
+
+  callbacks_params:
+    loader:
+      callback: CheckpointCallback
+      resume: './logs/checkpoints/best.pth'
+    infer:
+      callback: MNISTInferCallback
+      subm_file: "./logs/preds.csv"
+
+  infer: {}
