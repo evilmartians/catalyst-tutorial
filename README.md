@@ -1,4 +1,4 @@
-# [Beyond Fashion Deep Learning With Catalyst][post]
+# [Beyond Fashion: Deep Learning With Catalyst][post]
 
 [![](docs/ml_1200x1000_without_bg.png)][post]
 
